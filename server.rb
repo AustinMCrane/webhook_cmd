@@ -16,7 +16,7 @@ def get_cmd_for_key(key, passkey)
     return 'Error'
 end
 
-get '/hook' do
+post '/hook' do
     cmd_pair = get_cmd_for_key('test', 'test')
     value = %x(#{cmd_pair['cmd']})
     value
