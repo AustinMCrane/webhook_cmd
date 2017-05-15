@@ -1,5 +1,7 @@
 require 'sinatra'
 require 'json'
+set :bind, '0.0.0.0'
+
 
 def get_cmd_for_key(key, passkey)
     file = File.read('./config.json')
