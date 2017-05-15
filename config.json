@@ -1,0 +1,6 @@
+{
+    "test": {
+        "passkey": "test",
+        "cmd": "docker info"
+    }
+}
